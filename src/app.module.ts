@@ -5,10 +5,16 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ArticleModule } from './modules/article/article.module';
 import { AuthorModule } from './modules/author/author.module';
 import { CommentModule } from './modules/comment/comment.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/blog-exemple'),
+    ConfigModule.forRoot({
+      envFilePath: `.${process.env.NODE_ENV}.env`,
+    }),
+    MongooseModule.forRoot(
+      `mongodb://${process.env.HOST}:${process.env.PORT}/${process.env.DBNAME}`,
+    ),
     ArticleModule,
     AuthorModule,
     CommentModule,
