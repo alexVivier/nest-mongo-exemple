@@ -32,9 +32,9 @@ To start the project locally you will have to set your env vars in the `package.
 - `DBNAME` : It's the database name in your MongoDB server
 
 Now you can start locally using :
-``bash
+````bash
 yarn start:dev
-``
+````
 
 ## Endpoints
 
