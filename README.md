@@ -13,9 +13,9 @@ The `main` branch is the basic exemple. Don't hesitate to check other branches.
 ## Installation
 
 To install this repo locally you can use :
-- `ssh` : `git@github.com:alexVivier/nest-mongo-exemple.git`
-- `https` : `https://github.com/alexVivier/nest-mongo-exemple.git`
-- `github-cli` : `gh repo clone alexVivier/nest-mongo-exemple`
+- <b>ssh</b> : `git@github.com:alexVivier/nest-mongo-exemple.git`
+- <b>https</b> : `https://github.com/alexVivier/nest-mongo-exemple.git`
+- <b>github-cli</b> : `gh repo clone alexVivier/nest-mongo-exemple`
 
 Once you've cloned the repo you can install deps :
 
@@ -38,4 +38,8 @@ yarn start:dev
 
 ## Endpoints
 
-You can view endpoint docs at this url while your server is running : ``
+You can view endpoint docs at this url while your server is running : `http://localhost:3000/docs`.
+
+## Tests
+
+Tests will be introduced later.
